@@ -208,7 +208,7 @@ if __name__ == "__main__":
     alignment, alphabet, threshold, pseudo_factor = read_input()
 
     transfer_fractions, emission_fractions, match_count = compute_profile_hmm(alignment, alphabet, threshold, pseudo_factor)
-    # # Feel Free to use sys.stdout as the output file descriptor if you want
+    # Feel Free to use sys.stdout as the output file descriptor if you want
     with open ("output.txt", "wt") as output_file:
         print_transfer_fractions(transfer_fractions, match_count, file=output_file)
         print("--------", file=output_file)
